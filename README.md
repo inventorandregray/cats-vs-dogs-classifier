@@ -25,12 +25,6 @@ Built with **Python, scikit-learn, NumPy, and Pillow**, the project demonstrates
 
 ---
 
-##  Requirements
-Install dependencies with:
-
-```bash
-pip install numpy scikit-learn pillow joblib matplotlib
-
 ##  Command Line Arguments
 | Argument           | Description                                             |
 | ------------------ | ------------------------------------------------------- |
@@ -49,13 +43,10 @@ pip install numpy scikit-learn pillow joblib matplotlib
 | `--resize`         | Resize images (e.g., `--resize 128 128`)                |
 | `--verbose`        | Enable verbose logging                                  |
 
+## Notes
 
-Notes
+- KNN is simple and interpretable, but not state-of-the-art for images. For large-scale tasks, use CNNs.
+- PCA reduces dimensionality and speeds up training.
+- KNN inference scales poorly with dataset size; consider FAISS, Annoy, or deep learning for large datasets.
+- This project is suitable for educational purposes or small datasets.
 
-KNN is simple and interpretable, but not state-of-the-art for images. For large-scale tasks, use CNNs.
-
-PCA reduces dimensionality and speeds up training.
-
-KNN inference scales poorly with dataset size; consider FAISS, Annoy, or deep learning for large datasets.
-
-This project is suitable for educational purposes or small datasets.
